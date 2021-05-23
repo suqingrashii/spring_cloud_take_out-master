@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.sy.repository.OrderRepository">
+    <resultMap id="orderMap" type="Order">
+        <id property="id" column="o_id"/>
+        <result property="date" column="o_date"/>
+        <result property="state" column="o_state"/>
+        <!-- 映射menu -->
+        <association property="menu" javaType="Menu">
+            <id property="id" column="m_id"/>
+            <result property="name" column="m_name"/>
+            <result property="price" column="m_price"/>
+        </association>
+        <association property="user" javaType="User">
+            <id property="id" column="u_id"/>
+            <result property="nickname" column="u_name"/>
+            <result property="telephone" column="u_telephone"/>
+            <result property="address" column="u_address"/>
+        </association>
+        <association property="admin" javaType="Admin">
+            <id property="id" column="a_id"/>
+            <result property="username" column="a_name"/>
+        </association>
+    </resultMap>
+    <select id="findByUid" resultMap="orderMap">
+        select o.id o_id,o.date o_date,o.state o_state,m.name m_name,m.price m_price,u.address u_address
+        from t_order o,t_menu m,t_user u
+        where o.mid = m.id
+        and  o.uid = u.id
+        and o.uid = #{param3}
+        order by o_id limit #{param1},#{param2};
+    </select>
+    <select id="findByState" resultMap="orderMap">
+        select o.id o_id,o.date o_date,m.name m_name,u.nickname u_name,u.telephone u_telephone,u.address u_address
+        from t_order o,t_user u,t_menu m
+        where o.mid = m.id
+        and o.uid = u.id
+        and o.state = #{param3}
+        order by o_id limit #{param1},#{param2};
+    </select>
+    <select id="findByStateOne" resultMap="orderMap">
+        select o.id o_id,o.date o_date,m.name m_name,u.nickname u_name,u.telephone u_telephone,u.address u_address,a.username a_name
+        from t_order o,t_user u,t_menu m,t_admin a
+        where o.mid = m.id
+        and o.uid = u.id
+        and o.aid = a.id
+        and o.state = #{param3}
+        order by o_id limit #{param1},#{param2};
+    </select>
+    <insert id="save" parameterType="Order">
+        insert into t_order(uid,mid,date,state)
+        values (#{user.id},#{menu.id},#{date},0);
+    </insert>
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from t_order
+        where id = #{id};
+    </delete>
+    <select id="countByUid" parameterType="java.lang.Long" resultType="int">
+		select count(uid)
+		from t_order
+		where uid  = #{typeId};
+	</select>
+
+    <select id="countByState" parameterType="java.lang.Long" resultType="int">
+		select count(state)
+		from t_order
+		where state  = #{state};
+	</select>
+
+    <update id="updateById" parameterType="Order">
+    update t_order
+    <set>
+        aid = #{admin.id},
+        state = 1,
+    </set>
+    <where>
+        id = #{id}
+    </where>
+    </update>
+</mapper>

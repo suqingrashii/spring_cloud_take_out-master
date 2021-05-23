@@ -1,0 +1,4 @@
+com\sy\beans\User.class
+com\sy\handler\UserHandler.class
+com\sy\UserApplication.class
+com\sy\repository\UserRepository.class

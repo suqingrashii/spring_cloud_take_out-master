@@ -1,0 +1,8 @@
+com\sy\beans\Type.class
+com\sy\beans\User.class
+com\sy\beans\Admin.class
+com\sy\beans\Menu.class
+com\sy\handler\OrderHandler.class
+com\sy\repository\OrderRepository.class
+com\sy\beans\Order.class
+com\sy\OrderApplication.class

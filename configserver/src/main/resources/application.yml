@@ -1,0 +1,20 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: config-singe-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/suqingrashii/spring_cloud_take_out-master.git
+          default-label: main
+          search-paths: config
+          username: suqingrashii
+          password: 9811397746Dali
+          skip-ssl-validation: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

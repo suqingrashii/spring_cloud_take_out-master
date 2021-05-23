@@ -1,0 +1,5 @@
+com\sy\beans\Type.class
+com\sy\beans\Menu.class
+com\sy\handler\MenuHandler.class
+com\sy\repository\MenuRepository.class
+com\sy\MenuApplication.class

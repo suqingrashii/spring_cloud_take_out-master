@@ -1,0 +1,16 @@
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\handler\AccountHandler.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\feign\MenuFeign.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\beans\User.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\feign\MenuFeignError.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\beans\Menu.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\beans\Order.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\handler\OrderHandler.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\beans\Type.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\feign\OrderFeign.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\utils\JWTUtils.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\handler\MenuHandler.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\feign\UserFeign.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\handler\UserHandler.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\feign\AccountFeign.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\beans\Admin.java
+D:\a_bishe\demo\demo\spring_cloud_take_out\client\src\main\java\com\sy\ClientApplication.java

@@ -1,0 +1,16 @@
+com\sy\utils\JWTUtils.class
+com\sy\feign\OrderFeign.class
+com\sy\handler\UserHandler.class
+com\sy\beans\Order.class
+com\sy\feign\MenuFeign.class
+com\sy\feign\UserFeign.class
+com\sy\beans\Type.class
+com\sy\ClientApplication.class
+com\sy\beans\User.class
+com\sy\beans\Admin.class
+com\sy\beans\Menu.class
+com\sy\handler\OrderHandler.class
+com\sy\handler\MenuHandler.class
+com\sy\feign\MenuFeignError.class
+com\sy\handler\AccountHandler.class
+com\sy\feign\AccountFeign.class
