@@ -19,7 +19,7 @@
         update t_admin
         <set>
             <if test="password!=null and password!=''">
-                ,password = #{password}
+                password = #{password}
             </if>
         </set>
         <where>
