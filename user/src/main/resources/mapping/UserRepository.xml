@@ -24,7 +24,7 @@
         update t_user
         <set>
             <if test="nickname!=null and nickname!=''">
-                ,nickname = #{nickname}
+                nickname = #{nickname}
             </if>
             <if test="gender!=null and gender!=''">
                 ,gender = #{gender}
@@ -44,7 +44,7 @@
         update t_user
         <set>
             <if test="password!=null and password!=''">
-                ,password = #{password}
+                password = #{password}
             </if>
         </set>
         <where>
