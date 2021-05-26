@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0504d657-8d87-461d-83bf-8b1736cd0782" name="默认变更列表" comment="1">
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/sy/feign/UserFeignError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapping/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapping/UserRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/sy/handler/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/sy/handler/MenuHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/sy/handler/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/sy/handler/UserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/mapping/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/mapping/UserRepository.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +61,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ZuulApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sy.AccountApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,19 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sy.UserApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="zuul" />
       <extension name="coverage">
@@ -139,19 +139,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.ZuulApplication" />
       <item itemvalue="Spring Boot.ClientApplication" />
-      <item itemvalue="Spring Boot.MenuApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.AccountApplication" />
+      <item itemvalue="Spring Boot.MenuApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.AccountApplication" />
         <item itemvalue="Spring Boot.ClientApplication" />
-        <item itemvalue="Spring Boot.OrderApplication" />
-        <item itemvalue="Spring Boot.MenuApplication" />
         <item itemvalue="Spring Boot.ZuulApplication" />
+        <item itemvalue="Spring Boot.MenuApplication" />
+        <item itemvalue="Spring Boot.OrderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,8 @@
       <option name="presentableId" value="Default" />
       <updated>1621751317983</updated>
       <workItem from="1621751329252" duration="20290000" />
-      <workItem from="1621936198164" duration="8350000" />
+      <workItem from="1621936198164" duration="8974000" />
+      <workItem from="1621965521486" duration="4833000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1621751813625</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621923000333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1621960802878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621960802878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

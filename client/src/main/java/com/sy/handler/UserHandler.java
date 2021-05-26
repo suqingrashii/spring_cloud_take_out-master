@@ -2,6 +2,7 @@ package com.sy.handler;
 
 import com.sy.beans.User;
 import com.sy.feign.UserFeign;
+import feign.Feign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,9 +29,8 @@ public class UserHandler
     @GetMapping("/findById/{id}")
     public User findById(@PathVariable("id") Long id)
     {
-        User user01 =userFeign.findById(id);
-        user01.setPassword(null);
-        return user01;
+        System.out.println("------------------" +id);
+        return userFeign.findById(id);
     }
 
     @PostMapping("/updateById")
@@ -49,7 +49,7 @@ public class UserHandler
     @DeleteMapping("/deleteById")
     public boolean deleteById(Long id)
     {
-//        System.out.println("------------------"+id);
+        System.out.println("------------------"+id);
         return userFeign.deleteById(id);
     }
 
